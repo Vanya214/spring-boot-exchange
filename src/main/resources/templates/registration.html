@@ -1,0 +1,35 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>registration</title>
+</head>
+<body>
+<div>
+    <h1 th:text="${failedRegistrationReason}"></h1>
+    <form class="form-signin" method="post" action="/reg">
+        <h2 class="form-signin-heading">Registration</h2>
+        <p>
+            <label for="email">email</label>
+            <input type="text" id="email" name="email" class="form-control" placeholder="Username" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        </p>
+        <p>
+            <label for="firstName">first name</label>
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="first name" required>
+        </p>
+
+        <p>
+            <label for="lastName">last name</label>
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="last name" required>
+        </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>
